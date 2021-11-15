@@ -60,7 +60,7 @@ function buildCharts(sample) {
     // 3. Create a variable that holds the samples array. 
     var samples = data.samples;
     // 4. Create a variable that filters the samples for the object with the desired sample number.
-    var results= sample.filter(obj => obj.id == sample);
+    var results= samples.filter(obj => obj.id == sample);
     //  5. Create a variable that holds the first sample in the array.
     var result1= results[0];
 
@@ -74,7 +74,7 @@ function buildCharts(sample) {
     //  so the otu_ids with the most bacteria are last. 
 
     var yticks = otuIDs.slice(0,10).reverse().map(function (elem) {return `OTU ${elem}`});
-    var xticks = sampleValuess.slice(0,10).reverse();
+    var xticks = sampleValues.slice(0,10).reverse();
     var labels = otuLabels.slice(0,10).reverse();
 
     // 8. Create the trace for the bar chart. 
