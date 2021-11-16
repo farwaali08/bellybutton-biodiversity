@@ -63,7 +63,6 @@ function buildCharts(sample) {
     var results= samples.filter(obj => obj.id == sample);
     //  5. Create a variable that holds the first sample in the array.
     var result1= results[0];
-
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otuIDs= result1.otu_ids;
     var otuLabels= result1.otu_labels;
@@ -93,12 +92,12 @@ function buildCharts(sample) {
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", [barData], barLayout);
-  });
-};
-//Bubble charts
+
+  console.log(otuIDs);
+//Bubble chart
 
     // 1. Create the trace for the bubble chart.
-var bubbleData = {
+    var bubbleData = [{
       x: otuIDs,
       y: sampleValues,
       text: otuLabels,
@@ -108,7 +107,7 @@ var bubbleData = {
         color: otuIDs,
         colorscale: "YlGnBu"
       }
-    };
+    }];
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
@@ -116,7 +115,7 @@ var bubbleData = {
       xaxis: {title: "OTU ID"},
       showlegend: false
     };
-
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bubble", [bubbleData], bubbleLayout, {responsive: true}); 
-  
+  Plotly.newPlot("bubble", bubbleData, bubbleLayout, {responsive: true}); 
+
+});};
