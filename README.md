@@ -8,7 +8,7 @@ The deployed webpage can be accessed [here](https://farwaali08.github.io/bellybu
 
 ## TOOLS, RESOURCES, & QUICK LINKS
 
-* Data Source:[samples.json](https://github.com/farwaali08/bellybutton-biodiversity/blob/2050fcd951c3897a25acdc5bf2de403d9c6b03ba/samples.json)
+* Data Source: [samples.json](https://github.com/farwaali08/bellybutton-biodiversity/blob/2050fcd951c3897a25acdc5bf2de403d9c6b03ba/samples.json)
 * Code: [charts.js](https://github.com/farwaali08/bellybutton-biodiversity/blob/2050fcd951c3897a25acdc5bf2de403d9c6b03ba/charts.js)
 * HTML: [index.html](https://github.com/farwaali08/bellybutton-biodiversity/blob/2050fcd951c3897a25acdc5bf2de403d9c6b03ba/index.html)
 * Software
