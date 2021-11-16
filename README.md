@@ -1,6 +1,6 @@
 # bellybutton-biodiversity
 
-
+The webpage can be accessed [here](https://farwaali08.github.io/bellybutton-biodiversity/).
 
 ## WEBPAGE
 
